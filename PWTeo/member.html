@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="member.css">
+</head>
+<body>
+    <section>
+        <img src='./Assets/bg.jpg' id="bg">
+        <img src='./Assets/moon.png' id="moon">
+        <img src='./Assets/sea.png' id="sea">
+        <div class="pembungkush1">
+            <h1 id="text">Sea Serenity</h1>
+        </div>
+    </section>
+    <div id="headermenu">
+        <ul>
+            <a class = "link" id="menuregis" href="index.html">Registration</a>
+            <a class = "link" id="menumember" href="#">Members</a>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="inactive" id="registrasi">
+            <h2 id="headertext">Welcome To Night Sea Sighters Club</h2>
+            <div class="card">
+                <div class="innerbox">
+                    <h3 class="JoinUs">Join Us</h3>
+                    <span id="peringatan"></span>
+                    <form id="box">
+                        <input type="text" id="firstnametext" placeholder="First Name" required>
+                        <input type="text" id="lastnametext" placeholder="Last Name">
+                        <input type="text" id="email" placeholder="example@mail.com" onkeydown="validation()">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="member">
+            <table class="tabelmember">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aga</td>
+                        <td>Arganta</td>
+                        <td>gentur.rizky.arganta-2019@fst.unair.ac.id</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

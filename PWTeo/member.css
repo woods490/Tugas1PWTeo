@@ -1,0 +1,246 @@
+@font-face{
+    font-family:'FontMain';
+    src: url('./Poppins/Poppins-Regular.ttf')
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'FontMain';
+}
+
+body{
+    background: #0a2a42;
+    min-height: 1500px;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a42, transparent);
+    z-index: 1000;
+}
+
+section #bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section #sea{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 2;
+}
+
+section #moon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section .pembungkush1{
+    position: absolute;
+    left: 3%;
+    top: 25%;
+    z-index: 1;
+}
+
+#text{
+    color: #f3f3f3;    
+    font-size: 6em;
+    z-index: 1;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+a{
+    display: inline-block;
+    padding: 12px;
+    margin: 10px;
+    color: #f3f3f3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 2px;
+    border-radius: 20px;  
+}
+
+#headermenu{
+    overflow: hidden;
+}
+
+.link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f3f3f3;
+    transition: width .3s;
+}
+
+.link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0a2a42 ;
+}
+
+.content{
+    padding-top: 16px;
+    width: 100%;
+    height: 100vh;
+}
+
+.sticky + .content{
+    padding-top: 102px;
+}
+
+#headertext{
+    color: #f3f3f3;
+    text-align: center;    
+    font-size: 2em;
+}
+
+#contenttext{
+    color: #f3f3f3;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.card{
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 30%;
+    height: 60%;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
+}
+
+.inner-box{
+    width: 100%;
+    height: 100%;
+}
+
+.JoinUs{
+    padding-top: 10%;
+    text-align: center;
+    color:#f3f3f3;
+}
+
+#peringatan{
+    display: block;
+    color: #000;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+}
+
+#box{
+    text-align:center;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px
+}
+
+#box input[type = "text"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #f3f3f3;
+    padding: 5px 5px;
+    width: 200px;
+    outline: none;
+    color: #f3f3f3;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+#box input[type = "text"]:focus{
+    width: 250px;
+    border-color: #7f8084;
+}
+
+#box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #f3f3f3;
+    padding: 14px 20px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#box input[type = "submit"]:hover{
+    background: #7f8084;
+}
+
+.member{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tabelmember{
+    width: 650px;
+    margin-top: 10%;
+    margin-left: 23%;
+    font-size: 0.9em;
+    border: 2px solid black;
+}
+
+.tabelmember thead tr{
+    background-color: #7f8084;
+    color: #f3f3f3;
+}
+
+.tabelmember tbody tr{
+    background-color: white;
+    text-align: center;
+}
+
+.inactive{
+    display: none;
+}
